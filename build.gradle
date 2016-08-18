@@ -55,8 +55,8 @@ liquibase {
     }
 }
 
-task buildTest << {
-    tasks.diffChangeLog.execute()
+task buildTest(type: GradleBuild) {
+    tasks = ['diffChangeLog']
 }
 
 buildTest.dependsOn build
