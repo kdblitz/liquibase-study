@@ -5,8 +5,8 @@ package models;
  */
 public class Main {
 	public static void main(String[] args) {
-		HibernateFactory factory = new HibernateFactory();
-		factory.setup();
+//		HibernateFactory factory = new HibernateFactory();
+//		factory.setup();
 
 	}
 }

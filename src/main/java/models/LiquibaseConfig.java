@@ -10,6 +10,7 @@ public class LiquibaseConfig implements CustomClassicConfigurationFactory {
 	public Configuration getConfiguration(HibernateDatabase hibernateDatabase, HibernateConnection connection) {
 		Configuration configuration = new Configuration();
 		configuration.addAnnotatedClass(TestEntity.class);
+
 		return configuration;
 	}
 }

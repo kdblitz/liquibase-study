@@ -15,6 +15,7 @@ buildscript {
     }
 
     dependencies {
+        classpath 'org.hibernate:hibernate-core:4.3.8.Final'
         classpath 'org.liquibase:liquibase-gradle-plugin:1.2.0'
         classpath 'org.liquibase.ext:liquibase-hibernate4:3.5'
         classpath 'postgresql:postgresql:9.1-901-1.jdbc4'
@@ -30,7 +31,7 @@ repositories {
 }
 
 dependencies {
-    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.1.0.Final'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '4.3.8.Final'
     compile group: 'postgresql', name: 'postgresql', version: '9.1-901-1.jdbc4'
     compile('org.liquibase:liquibase-core:3.3.5')
     compile group: 'org.liquibase.ext', name:'liquibase-hibernate4', version: '3.5'
