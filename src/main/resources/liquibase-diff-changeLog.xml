@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+    <changeSet author="kelee (generated)" id="1471495569024-1">
+        <createTable tableName="TestEntity">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="data" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="kelee (generated)" id="1471495569024-2">
+        <addPrimaryKey columnNames="id" constraintName="TestEntityPK" tableName="TestEntity"/>
+    </changeSet>
+    <changeSet author="kelee (generated)" id="1471495635257-1">
+        <addColumn tableName="TestEntity">
+            <column name="another" type="varchar(255)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="kelee (generated)" id="1471496027841-1">
+        <addColumn tableName="TestEntity">
+            <column name="anotherField" type="varchar(255)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="kelee (generated)" id="1471496027841-2">
+        <dropColumn columnName="another" tableName="TestEntity"/>
+    </changeSet>
+    <changeSet author="kelee (generated)" id="1471497463136-1">
+        <addColumn tableName="TestEntity">
+            <column name="anotherField" type="varchar(255)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="kelee (generated)" id="1471497463136-2">
+        <dropColumn columnName="another" tableName="TestEntity"/>
+    </changeSet>
+    <changeSet author="kelee (generated)" id="1471497506650-1">
+        <addColumn tableName="TestEntity">
+            <column name="anotherField" type="varchar(255)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="kelee (generated)" id="1471497506650-2">
+        <dropColumn columnName="another" tableName="TestEntity"/>
+    </changeSet>
+</databaseChangeLog>
